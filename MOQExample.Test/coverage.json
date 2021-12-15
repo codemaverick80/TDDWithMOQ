@@ -1,0 +1,247 @@
+{
+  "MOQExample.dll": {
+    "E:\\DotNet Projects\\TDDWithMOQ\\MOQExample\\Program.cs": {
+      "MOQExample.Program": {
+        "System.Void MOQExample.Program::Main(System.String[])": {
+          "Lines": {
+            "8": 0,
+            "12": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "E:\\DotNet Projects\\TDDWithMOQ\\MOQExample\\Repositories\\ProductRepository.cs": {
+      "MOQExample.Repositories.ProductRepository": {
+        "System.Collections.Generic.List`1<MOQExample.Domain.Product> MOQExample.Repositories.ProductRepository::db()": {
+          "Lines": {
+            "12": 0,
+            "13": 0,
+            "14": 0,
+            "15": 0,
+            "16": 0,
+            "17": 0,
+            "18": 0
+          },
+          "Branches": []
+        },
+        "System.Boolean MOQExample.Repositories.ProductRepository::AddProduct(MOQExample.Domain.Product)": {
+          "Lines": {
+            "21": 0,
+            "22": 0,
+            "24": 0,
+            "25": 0,
+            "26": 0,
+            "27": 0,
+            "28": 0
+          },
+          "Branches": [
+            {
+              "Line": 22,
+              "Offset": 14,
+              "EndOffset": 16,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 22,
+              "Offset": 14,
+              "EndOffset": 27,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 41,
+              "EndOffset": 43,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 24,
+              "Offset": 41,
+              "EndOffset": 54,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "MOQExample.Domain.Product MOQExample.Repositories.ProductRepository::Get(System.Int32)": {
+          "Lines": {
+            "31": 0,
+            "32": 0,
+            "35": 0,
+            "36": 0,
+            "37": 0,
+            "38": 0
+          },
+          "Branches": [
+            {
+              "Line": 32,
+              "Offset": 28,
+              "EndOffset": 30,
+              "Path": 0,
+              "Ordinal": 0,
+              "Hits": 0
+            },
+            {
+              "Line": 32,
+              "Offset": 28,
+              "EndOffset": 52,
+              "Path": 1,
+              "Ordinal": 1,
+              "Hits": 0
+            },
+            {
+              "Line": 36,
+              "Offset": 87,
+              "EndOffset": 89,
+              "Path": 0,
+              "Ordinal": 2,
+              "Hits": 0
+            },
+            {
+              "Line": 36,
+              "Offset": 87,
+              "EndOffset": 111,
+              "Path": 1,
+              "Ordinal": 3,
+              "Hits": 0
+            }
+          ]
+        },
+        "System.Collections.Generic.List`1<MOQExample.Domain.Product> MOQExample.Repositories.ProductRepository::GetAll()": {
+          "Lines": {
+            "41": 0,
+            "43": 0,
+            "44": 0,
+            "45": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "E:\\DotNet Projects\\TDDWithMOQ\\MOQExample\\Exceptions\\InvalidGuidException.cs": {
+      "MOQExample.Exceptions.InvalidGuidException": {
+        "System.String MOQExample.Exceptions.InvalidGuidException::get_Reason()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.Void MOQExample.Exceptions.InvalidGuidException::.ctor(System.String,System.Object)": {
+          "Lines": {
+            "14": 3
+          },
+          "Branches": []
+        },
+        "System.Void MOQExample.Exceptions.InvalidGuidException::.ctor(System.String,System.Exception)": {
+          "Lines": {
+            "17": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "E:\\DotNet Projects\\TDDWithMOQ\\MOQExample\\Exceptions\\NotFoundException.cs": {
+      "MOQExample.Exceptions.NotFoundException": {
+        "System.String MOQExample.Exceptions.NotFoundException::get_Reason()": {
+          "Lines": {
+            "11": 0
+          },
+          "Branches": []
+        },
+        "System.Void MOQExample.Exceptions.NotFoundException::.ctor()": {
+          "Lines": {
+            "13": 3
+          },
+          "Branches": []
+        },
+        "System.Void MOQExample.Exceptions.NotFoundException::.ctor(System.String,System.Object)": {
+          "Lines": {
+            "14": 0
+          },
+          "Branches": []
+        },
+        "System.Void MOQExample.Exceptions.NotFoundException::.ctor(System.String,System.Exception)": {
+          "Lines": {
+            "15": 0
+          },
+          "Branches": []
+        }
+      }
+    },
+    "E:\\DotNet Projects\\TDDWithMOQ\\MOQExample\\Domain\\Product.cs": {
+      "MOQExample.Domain.Product": {
+        "System.Int32 MOQExample.Domain.Product::get_Id()": {
+          "Lines": {
+            "11": 6
+          },
+          "Branches": []
+        },
+        "System.String MOQExample.Domain.Product::get_Name()": {
+          "Lines": {
+            "12": 6
+          },
+          "Branches": []
+        },
+        "System.Double MOQExample.Domain.Product::get_Price()": {
+          "Lines": {
+            "13": 4
+          },
+          "Branches": []
+        }
+      }
+    },
+    "E:\\DotNet Projects\\TDDWithMOQ\\MOQExample\\Controllers\\ProductController.cs": {
+      "MOQExample.Controllers.ProductController": {
+        "System.Collections.Generic.List`1<MOQExample.Domain.Product> MOQExample.Controllers.ProductController::GetProducts()": {
+          "Lines": {
+            "23": 0,
+            "24": 0,
+            "26": 0,
+            "27": 0
+          },
+          "Branches": []
+        },
+        "MOQExample.Domain.Product MOQExample.Controllers.ProductController::GetById(System.Int32)": {
+          "Lines": {
+            "30": 3,
+            "32": 3,
+            "33": 3,
+            "34": 1,
+            "36": 2,
+            "37": 2,
+            "38": 2,
+            "39": 2,
+            "41": 1
+          },
+          "Branches": []
+        },
+        "System.Boolean MOQExample.Controllers.ProductController::AddProduct(MOQExample.Domain.Product)": {
+          "Lines": {
+            "44": 3,
+            "49": 3,
+            "50": 1,
+            "51": 1
+          },
+          "Branches": []
+        },
+        "System.Void MOQExample.Controllers.ProductController::.ctor(MOQExample.Repositories.IProductRepository,Microsoft.Extensions.Logging.ILogger)": {
+          "Lines": {
+            "16": 12,
+            "17": 12,
+            "18": 12,
+            "19": 12,
+            "20": 12
+          },
+          "Branches": []
+        }
+      }
+    }
+  }
+}
