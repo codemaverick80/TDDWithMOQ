@@ -5,7 +5,7 @@
         "System.Void MOQExample.Program::Main(System.String[])": {
           "Lines": {
             "8": 0,
-            "12": 0
+            "10": 0
           },
           "Branches": []
         }
@@ -179,19 +179,19 @@
       "MOQExample.Domain.Product": {
         "System.Int32 MOQExample.Domain.Product::get_Id()": {
           "Lines": {
-            "11": 6
+            "11": 10
           },
           "Branches": []
         },
         "System.String MOQExample.Domain.Product::get_Name()": {
           "Lines": {
-            "12": 6
+            "12": 5
           },
           "Branches": []
         },
         "System.Double MOQExample.Domain.Product::get_Price()": {
           "Lines": {
-            "13": 4
+            "13": 5
           },
           "Branches": []
         }

@@ -74,7 +74,7 @@ we can also install coverlet.msbuild package if we want to integrate Coverlet wi
 
 
 
-@@@@@@@@@ MSBuil Test Report generation
+@@@@@@@@@ MSBuild Test Report generation
 ###### https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/MSBuildIntegration.md#excluding-from-coverage
 ###### 3. ================= coverlet.msbuild generate test report ================= ######
 
@@ -92,4 +92,24 @@ dotnet test /p:CollectCoverage=true
 
 dotnet test --collect:"XPlat Code Coverage"
 
+
+Note: above command will create a xml file in ""TestResults > GUID > coverage.cobertura.xml"
+
 ###### coverlet.collector generate test report END ######
+
+
+
+@@@@@@@@@ Generate reports (HTML)
+###### 4. ================= Install Report Generator ================= ######
+
+dotnet tool install -g dotnet-reportgenerator-globaltool
+
+
+-------- Console / Command Line
+reportgenerator
+-reports:"Path\To\TestProject\TestResults\{guid}\coverage.cobertura.xml"
+-targetdir:"coveragereport"
+-reporttypes:Html
+
+e.g.
+E:\DotNet Projects\TDDWithMOQ\MOQExample.Test\TestResults\7160e576-c331-438d-89f1-443bcb78f181> reportgenerator -reports:"coverage.cobertura.xml" -targetdir:"coveragereport" -reporttypes:Html
