@@ -1,4 +1,5 @@
-﻿using System;
+﻿using FluentValidation;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,5 +12,16 @@ namespace MOQExample.Domain
         public int Id { get; set; }
         public string Name { get; set; }
         public double Price { get; set; }
+    }
+
+
+
+    public class ProductValidator: AbstractValidator<Product>
+    {
+        public ProductValidator()
+        {
+            RuleFor(moded => moded.Name).NotEmpty().WithMessage("Product name is empty");
+        }
+
     }
 }
