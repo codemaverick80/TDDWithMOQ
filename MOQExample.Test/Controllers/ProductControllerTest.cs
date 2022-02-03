@@ -189,10 +189,17 @@ namespace MOQExample.Test.Controllers
         {
 
             // Arrange
-            var product = new Product { Id = 0, Name = "", Price = 122 };
+            var product = new Product {
+                Id = 1,
+                Name = "Harish Chand",
+                Price = 122,
+                NotifactionType="text",
+                ZipCode="df",
+                Email="abc@hotmail.com"
+            };
 
             var result=_validator.TestValidate(product);
-
+             
             //var error=  result.ShouldHaveValidationErrorFor(model => model.Name);
             var error = result.ShouldHaveValidationErrorFor(model => model.Name)
                 .WithErrorMessage("Product name is empty.")

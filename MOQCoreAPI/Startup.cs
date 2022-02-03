@@ -10,6 +10,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using MOQCoreAPI.Domain;
 using MOQCoreAPI.Repositories;
+using MOQCoreAPI.Services;
+using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -30,15 +32,30 @@ namespace MOQCoreAPI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IProductRepository, ProductRepository>();
+            
+            services.AddMemoryCache();
+            services.AddScoped<ICacheService, InMemoryCacheService>();
+
+
+            services.AddScoped<ICacheService, RedisCacheService>();
+
+            //services.AddSingleton<IConnectionMultiplexer>(x =>
+            //ConnectionMultiplexer.Connect(Configuration.GetValue<string>("RedisConnection")));
+
+
+
+
+
 
             services.AddControllers()
-                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<ProductValidator>());
+                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<Startup>());
             // services.AddControllers();
 
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "MOQCoreAPI", Version = "v1" });
             });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
